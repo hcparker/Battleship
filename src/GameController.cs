@@ -177,8 +177,7 @@ public static class GameController
 					SwinGame.Delay(10);
 					SwinGame.RefreshScreen();
 				}
-	/// Problematic audio section here is fixed. Refer to bug list on Trello.
-				
+
 				if (HumanPlayer.IsDestroyed) {
 				Audio.PlaySoundEffect(GameResources.GameSound("Lose"));
 				} else {

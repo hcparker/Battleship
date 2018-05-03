@@ -16,9 +16,9 @@ using SwinGameSDK;
 /// </remarks>
 static class HighScoreController
 {
-	private const int NAME_WIDTH = 4; //the constant changes the values of the highscores to 4 digits, was 3 previously
+	private const int NAME_WIDTH = 3; //the constant changes the values of the highscores to 3 digits
 
-	private const int SCORES_LEFT = 350;
+	private const int SCORES_LEFT = 490;
 	/// <summary>
 	/// The score structure is used to keep the name and
 	/// score of the top players together.
@@ -96,7 +96,7 @@ static class HighScoreController
 	/// 
 	/// Where NNN is the name and SSS is the score
 	/// </remarks>
-	private static void SaveScores()
+	public static void SaveScores()
 	{
 		string filename = null;
 		filename = SwinGame.PathToResource("highscores.txt");
@@ -125,7 +125,7 @@ static class HighScoreController
 		if (_Scores.Count == 0)
 			LoadScores();
 
-		SwinGame.FillRectangle (SwinGame.RGBAColor(0,0,0,50), SCORES_LEFT-20, SCORES_TOP-50, 150, 350);
+		SwinGame.FillRectangle(SwinGame.RGBAColor(0, 0, 0, 50), SCORES_LEFT - 20, SCORES_TOP - 50, 150, 350);
 		SwinGame.DrawRectangle (Color.Gray, SCORES_LEFT - 20, SCORES_TOP - 50, 150, 350);
 		SwinGame.DrawText("   High Scores   ", Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_HEADING);
 
@@ -144,7 +144,7 @@ static class HighScoreController
 			}
 		}
 
-		SwinGame.DrawTextLines("BACK", Color.White, Color.Black, GameResources.GameFont("Menu"), FontAlignment.AlignCenter, (SwinGame.ScreenWidth()/2)-37, SCORES_TOP+450, 75, 15);
+		SwinGame.DrawTextLines("BACK", SwinGame.RGBAColor(2, 167, 252, 255), Color.Black, GameResources.GameFont("Menu"), FontAlignment.AlignCenter, (SwinGame.ScreenWidth()/2)-37, SCORES_TOP+450, 75, 15);
 
 	}
 
