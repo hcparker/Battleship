@@ -17,34 +17,34 @@ static class UtilityFunctions
 	public const int FIELD_TOP = 122;
 	public const int FIELD_LEFT = 349;
 	public const int FIELD_WIDTH = 418;
-
 	public const int FIELD_HEIGHT = 418;
 
 	public const int MESSAGE_TOP = 548;
+
 	public const int CELL_WIDTH = 40;
 	public const int CELL_HEIGHT = 40;
-
 	public const int CELL_GAP = 2;
 
 	public const int SHIP_GAP = 3;
+
 	private static readonly Color SMALL_SEA = SwinGame.RGBAColor(6, 60, 94, 255);
 	private static readonly Color SMALL_SHIP = Color.Gray;
 	private static readonly Color SMALL_MISS = SwinGame.RGBAColor(1, 147, 220, 255);
-
 	private static readonly Color SMALL_HIT = SwinGame.RGBAColor(169, 24, 37, 255);
+
 	private static readonly Color LARGE_SEA = SwinGame.RGBAColor(6, 60, 94, 255);
 	private static readonly Color LARGE_SHIP = Color.Gray;
 	private static readonly Color LARGE_MISS = SwinGame.RGBAColor(1, 147, 220, 255);
-
 	private static readonly Color LARGE_HIT = SwinGame.RGBAColor(252, 2, 3, 255);
+
 	private static readonly Color OUTLINE_COLOR = SwinGame.RGBAColor(5, 55, 88, 255);
 	private static readonly Color SHIP_FILL_COLOR = Color.Gray;
 	private static readonly Color SHIP_OUTLINE_COLOR = Color.White;
-
 	private static readonly Color MESSAGE_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
-	public const int ANIMATION_CELLS = 7;
 
+	public const int ANIMATION_CELLS = 7;
 	public const int FRAMES_PER_CELL = 8;
+
 	/// <summary>
 	/// Determines if the mouse is in a given rectangle.
 	/// </summary>
